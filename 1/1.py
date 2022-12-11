@@ -11,13 +11,11 @@ def p1():
                 elf.append((index, sum))
                 index += 1
                 sum = 0
-        
         max = 0
         for i in elf:
             if i[1] > max:
                 max = i[1]
                 index = i[0]
-
         return max
 
 def p2():
@@ -39,5 +37,4 @@ def p2():
         elf.sort(key=lambda x: x[1], reverse=True)
         for i in range(0,3):
             sum += elf[i][1]
-
         return sum

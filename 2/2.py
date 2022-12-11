@@ -43,4 +43,3 @@ def p2():
         
         return points
 
-print(p2())

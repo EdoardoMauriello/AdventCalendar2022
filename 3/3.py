@@ -9,15 +9,13 @@ def p1():
                 if j in i[1]:
                     duplicates.append(j)
                     break
-        
         psum = 0
         for i in duplicates:
             if ord(i) >= ord('a') and ord(i) <= ord('z'):
                 psum += ord(i) - 96
             elif ord(i) >= ord('A') and ord(i) <= ord('Z'):
                 psum += ord(i) - 38
-
-        print(psum, duplicates[0], data[0])
+        return psum
 
 def p2():
     with open("3/3.txt") as f:
@@ -44,13 +42,10 @@ def p2():
                 if prod > 0:
                     badges.append(d)
                     break
-        
         psum = 0
         for i in badges:
             if ord(i) >= ord('a') and ord(i) <= ord('z'):
                 psum += ord(i) - 96
             elif ord(i) >= ord('A') and ord(i) <= ord('Z'):
                 psum += ord(i) - 38
-        
-        print(psum)
-p2()
+        return psum
