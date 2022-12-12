@@ -59,4 +59,3 @@ def p2():
         for stack in stacks:
             word += stack.pop()
         return word
-print(p2())
